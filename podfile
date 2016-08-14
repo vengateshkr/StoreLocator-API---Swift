@@ -1,0 +1,4 @@
+
+target “StoreLocator” do
+pod 'GoogleMaps'
+end

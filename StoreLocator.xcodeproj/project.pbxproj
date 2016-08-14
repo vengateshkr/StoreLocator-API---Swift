@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3636C85094CD688AEC96819A /* libPods-StoreLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFBF175C4CB0BF6BDB3ECA1 /* libPods-StoreLocator.a */; };
+		976EE0461D21778F00D6E016 /* StoreDtl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EE0451D21778F00D6E016 /* StoreDtl.swift */; };
+		976EE0481D2177E200D6E016 /* StoreHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EE0471D2177E200D6E016 /* StoreHours.swift */; };
+		976EE04A1D2177F700D6E016 /* PharmacyHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EE0491D2177F700D6E016 /* PharmacyHours.swift */; };
+		976EE04C1D21780A00D6E016 /* ClinicHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EE04B1D21780A00D6E016 /* ClinicHours.swift */; };
+		976EE04E1D21BC9600D6E016 /* StoreContactDtl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EE04D1D21BC9600D6E016 /* StoreContactDtl.swift */; };
+		97A2B7A51D1649B200705D4F /* revealicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A2B7A41D1649B200705D4F /* revealicon@2x.png */; };
+		97A2B7A71D1761BF00705D4F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A2B7A61D1761BF00705D4F /* Default.png */; };
+		97BBD9E61D0711C800A15849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BBD9E51D0711C800A15849 /* AppDelegate.swift */; };
+		97BBD9E81D0711C800A15849 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BBD9E71D0711C800A15849 /* MapViewController.swift */; };
+		97BBD9EB1D0711C800A15849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BBD9E91D0711C800A15849 /* Main.storyboard */; };
+		97BBD9EE1D0711C800A15849 /* StoreLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97BBD9EC1D0711C800A15849 /* StoreLocator.xcdatamodeld */; };
+		97BBD9F01D0711C800A15849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BBD9EF1D0711C800A15849 /* Assets.xcassets */; };
+		97BBD9F31D0711C800A15849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BBD9F11D0711C800A15849 /* LaunchScreen.storyboard */; };
+		97BBD9FE1D0711C800A15849 /* StoreLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BBD9FD1D0711C800A15849 /* StoreLocatorTests.swift */; };
+		97BBDA091D0711C800A15849 /* StoreLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BBDA081D0711C800A15849 /* StoreLocatorUITests.swift */; };
+		97CD470F1D232B0E00891D39 /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97CD470E1D232B0E00891D39 /* Phone@2x.png */; };
+		97CD47111D232C6400891D39 /* MapPointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97CD47101D232C6400891D39 /* MapPointer@2x.png */; };
+		97DADA5D1D0E265C00EE4409 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DADA5C1D0E265C00EE4409 /* ViewController.swift */; };
+		97DADA601D0E2B2900EE4409 /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DADA5F1D0E2B2900EE4409 /* store.png */; };
+		97DADA621D0E5EFB00EE4409 /* StoreDtlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DADA611D0E5EFB00EE4409 /* StoreDtlViewController.swift */; };
+		97FD3B161D1AF643003749B0 /* StoreDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3B151D1AF643003749B0 /* StoreDetailsCell.swift */; };
+		97FD3B181D1AF68A003749B0 /* StoreContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3B171D1AF68A003749B0 /* StoreContactCell.swift */; };
+		97FD3B1A1D1B1498003749B0 /* StoreHoursCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3B191D1B1498003749B0 /* StoreHoursCell.swift */; };
+		97FD3B1C1D1B14BC003749B0 /* PharmacyHourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3B1B1D1B14BC003749B0 /* PharmacyHourCell.swift */; };
+		97FD3B1E1D1B14C9003749B0 /* ClinicHourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD3B1D1D1B14C9003749B0 /* ClinicHourCell.swift */; };
+		97FF83271D0B0F350059605A /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF83261D0B0F350059605A /* Stores.swift */; };
+		97FF83291D0B16230059605A /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF83281D0B16230059605A /* MapTableViewCell.swift */; };
+		97FF832D1D0B51D00059605A /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF832B1D0B51D00059605A /* POST.swift */; };
+		97FF832E1D0B51D00059605A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF832C1D0B51D00059605A /* JSON.swift */; };
+		97FF83301D0B52940059605A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF832F1D0B52940059605A /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97BBD9FA1D0711C800A15849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97BBD9DA1D0711C800A15849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97BBD9E11D0711C800A15849;
+			remoteInfo = StoreLocator;
+		};
+		97BBDA051D0711C800A15849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97BBD9DA1D0711C800A15849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97BBD9E11D0711C800A15849;
+			remoteInfo = StoreLocator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CFBF175C4CB0BF6BDB3ECA1 /* libPods-StoreLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoreLocator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A9851D007263122085D0D1 /* Pods-StoreLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreLocator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StoreLocator/Pods-StoreLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		97472E5A1D075783007B8A5B /* StoreLocator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoreLocator-Bridging-Header.h"; sourceTree = "<group>"; };
+		976EE0451D21778F00D6E016 /* StoreDtl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDtl.swift; sourceTree = "<group>"; };
+		976EE0471D2177E200D6E016 /* StoreHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreHours.swift; sourceTree = "<group>"; };
+		976EE0491D2177F700D6E016 /* PharmacyHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmacyHours.swift; sourceTree = "<group>"; };
+		976EE04B1D21780A00D6E016 /* ClinicHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicHours.swift; sourceTree = "<group>"; };
+		976EE04D1D21BC9600D6E016 /* StoreContactDtl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreContactDtl.swift; sourceTree = "<group>"; };
+		97A2B7A41D1649B200705D4F /* revealicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "revealicon@2x.png"; sourceTree = "<group>"; };
+		97A2B7A61D1761BF00705D4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		97BBD9E21D0711C800A15849 /* StoreLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BBD9E51D0711C800A15849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97BBD9E71D0711C800A15849 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		97BBD9EA1D0711C800A15849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97BBD9ED1D0711C800A15849 /* StoreLocator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoreLocator.xcdatamodel; sourceTree = "<group>"; };
+		97BBD9EF1D0711C800A15849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97BBD9F21D0711C800A15849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97BBD9F41D0711C800A15849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BBD9F91D0711C800A15849 /* StoreLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BBD9FD1D0711C800A15849 /* StoreLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLocatorTests.swift; sourceTree = "<group>"; };
+		97BBD9FF1D0711C800A15849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BBDA041D0711C800A15849 /* StoreLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BBDA081D0711C800A15849 /* StoreLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLocatorUITests.swift; sourceTree = "<group>"; };
+		97BBDA0A1D0711C900A15849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CD470E1D232B0E00891D39 /* Phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone@2x.png"; sourceTree = "<group>"; };
+		97CD47101D232C6400891D39 /* MapPointer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MapPointer@2x.png"; sourceTree = "<group>"; };
+		97DADA5C1D0E265C00EE4409 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97DADA5F1D0E2B2900EE4409 /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
+		97DADA611D0E5EFB00EE4409 /* StoreDtlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDtlViewController.swift; sourceTree = "<group>"; };
+		97FD3B151D1AF643003749B0 /* StoreDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsCell.swift; sourceTree = "<group>"; };
+		97FD3B171D1AF68A003749B0 /* StoreContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreContactCell.swift; sourceTree = "<group>"; };
+		97FD3B191D1B1498003749B0 /* StoreHoursCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreHoursCell.swift; sourceTree = "<group>"; };
+		97FD3B1B1D1B14BC003749B0 /* PharmacyHourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmacyHourCell.swift; sourceTree = "<group>"; };
+		97FD3B1D1D1B14C9003749B0 /* ClinicHourCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicHourCell.swift; sourceTree = "<group>"; };
+		97FF83261D0B0F350059605A /* Stores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stores.swift; sourceTree = "<group>"; };
+		97FF83281D0B16230059605A /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		97FF832B1D0B51D00059605A /* POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
+		97FF832C1D0B51D00059605A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		97FF832F1D0B52940059605A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D10F00902C11EF9B28BDD65C /* Pods-StoreLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreLocator.release.xcconfig"; path = "Pods/Target Support Files/Pods-StoreLocator/Pods-StoreLocator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97BBD9DF1D0711C800A15849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3636C85094CD688AEC96819A /* libPods-StoreLocator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBD9F61D0711C800A15849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBDA011D0711C800A15849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9778EEFA1D08B2BA00B86C2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97BBD9E91D0711C800A15849 /* Main.storyboard */,
+				97BBD9F11D0711C800A15849 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9778EEFB1D08B2E500B86C2A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97DADA5C1D0E265C00EE4409 /* ViewController.swift */,
+				97BBD9E71D0711C800A15849 /* MapViewController.swift */,
+				97DADA611D0E5EFB00EE4409 /* StoreDtlViewController.swift */,
+				97FF83281D0B16230059605A /* MapTableViewCell.swift */,
+				97FD3B151D1AF643003749B0 /* StoreDetailsCell.swift */,
+				97FD3B171D1AF68A003749B0 /* StoreContactCell.swift */,
+				97FD3B191D1B1498003749B0 /* StoreHoursCell.swift */,
+				97FD3B1B1D1B14BC003749B0 /* PharmacyHourCell.swift */,
+				97FD3B1D1D1B14C9003749B0 /* ClinicHourCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9778EEFC1D08B34500B86C2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97FF83261D0B0F350059605A /* Stores.swift */,
+				976EE0451D21778F00D6E016 /* StoreDtl.swift */,
+				976EE04D1D21BC9600D6E016 /* StoreContactDtl.swift */,
+				976EE0471D2177E200D6E016 /* StoreHours.swift */,
+				976EE0491D2177F700D6E016 /* PharmacyHours.swift */,
+				976EE04B1D21780A00D6E016 /* ClinicHours.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		97BBD9D91D0711C800A15849 = {
+			isa = PBXGroup;
+			children = (
+				97BBD9E41D0711C800A15849 /* StoreLocator */,
+				97BBD9FC1D0711C800A15849 /* StoreLocatorTests */,
+				97BBDA071D0711C800A15849 /* StoreLocatorUITests */,
+				97BBD9E31D0711C800A15849 /* Products */,
+				9AD0E01E4F6D98E4AF05C1BC /* Pods */,
+				C9E0C855E0A3C53B98613DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97BBD9E31D0711C800A15849 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97BBD9E21D0711C800A15849 /* StoreLocator.app */,
+				97BBD9F91D0711C800A15849 /* StoreLocatorTests.xctest */,
+				97BBDA041D0711C800A15849 /* StoreLocatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97BBD9E41D0711C800A15849 /* StoreLocator */ = {
+			isa = PBXGroup;
+			children = (
+				97BBD9E51D0711C800A15849 /* AppDelegate.swift */,
+				9778EEFA1D08B2BA00B86C2A /* Views */,
+				9778EEFB1D08B2E500B86C2A /* Controllers */,
+				9778EEFC1D08B34500B86C2A /* Models */,
+				97FF832A1D0B516D0059605A /* Utils */,
+				97DADA5E1D0E2AAE00EE4409 /* Support Files */,
+			);
+			path = StoreLocator;
+			sourceTree = "<group>";
+		};
+		97BBD9FC1D0711C800A15849 /* StoreLocatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				97BBD9FD1D0711C800A15849 /* StoreLocatorTests.swift */,
+				97BBD9FF1D0711C800A15849 /* Info.plist */,
+			);
+			path = StoreLocatorTests;
+			sourceTree = "<group>";
+		};
+		97BBDA071D0711C800A15849 /* StoreLocatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97BBDA081D0711C800A15849 /* StoreLocatorUITests.swift */,
+				97BBDA0A1D0711C900A15849 /* Info.plist */,
+			);
+			path = StoreLocatorUITests;
+			sourceTree = "<group>";
+		};
+		97DADA5E1D0E2AAE00EE4409 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97CD470E1D232B0E00891D39 /* Phone@2x.png */,
+				97CD47101D232C6400891D39 /* MapPointer@2x.png */,
+				97A2B7A61D1761BF00705D4F /* Default.png */,
+				97A2B7A41D1649B200705D4F /* revealicon@2x.png */,
+				97DADA5F1D0E2B2900EE4409 /* store.png */,
+				97BBD9EF1D0711C800A15849 /* Assets.xcassets */,
+				97BBD9F41D0711C800A15849 /* Info.plist */,
+				97BBD9EC1D0711C800A15849 /* StoreLocator.xcdatamodeld */,
+				97472E5A1D075783007B8A5B /* StoreLocator-Bridging-Header.h */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		97FF832A1D0B516D0059605A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				97FF832B1D0B51D00059605A /* POST.swift */,
+				97FF832C1D0B51D00059605A /* JSON.swift */,
+				97FF832F1D0B52940059605A /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		9AD0E01E4F6D98E4AF05C1BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56A9851D007263122085D0D1 /* Pods-StoreLocator.debug.xcconfig */,
+				D10F00902C11EF9B28BDD65C /* Pods-StoreLocator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9E0C855E0A3C53B98613DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CFBF175C4CB0BF6BDB3ECA1 /* libPods-StoreLocator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97BBD9E11D0711C800A15849 /* StoreLocator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BBDA0D1D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocator" */;
+			buildPhases = (
+				2E66BA8A9F065762ED8FCFBB /* [CP] Check Pods Manifest.lock */,
+				97BBD9DE1D0711C800A15849 /* Sources */,
+				97BBD9DF1D0711C800A15849 /* Frameworks */,
+				97BBD9E01D0711C800A15849 /* Resources */,
+				BAE77F0AEC8CA7777B12C3F1 /* [CP] Embed Pods Frameworks */,
+				8FA82F5159C81AB3E3454369 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoreLocator;
+			productName = StoreLocator;
+			productReference = 97BBD9E21D0711C800A15849 /* StoreLocator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97BBD9F81D0711C800A15849 /* StoreLocatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BBDA101D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocatorTests" */;
+			buildPhases = (
+				97BBD9F51D0711C800A15849 /* Sources */,
+				97BBD9F61D0711C800A15849 /* Frameworks */,
+				97BBD9F71D0711C800A15849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97BBD9FB1D0711C800A15849 /* PBXTargetDependency */,
+			);
+			name = StoreLocatorTests;
+			productName = StoreLocatorTests;
+			productReference = 97BBD9F91D0711C800A15849 /* StoreLocatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97BBDA031D0711C800A15849 /* StoreLocatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BBDA131D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocatorUITests" */;
+			buildPhases = (
+				97BBDA001D0711C800A15849 /* Sources */,
+				97BBDA011D0711C800A15849 /* Frameworks */,
+				97BBDA021D0711C800A15849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97BBDA061D0711C800A15849 /* PBXTargetDependency */,
+			);
+			name = StoreLocatorUITests;
+			productName = StoreLocatorUITests;
+			productReference = 97BBDA041D0711C800A15849 /* StoreLocatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97BBD9DA1D0711C800A15849 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ctsuser1;
+				TargetAttributes = {
+					97BBD9E11D0711C800A15849 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					97BBD9F81D0711C800A15849 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 97BBD9E11D0711C800A15849;
+					};
+					97BBDA031D0711C800A15849 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 97BBD9E11D0711C800A15849;
+					};
+				};
+			};
+			buildConfigurationList = 97BBD9DD1D0711C800A15849 /* Build configuration list for PBXProject "StoreLocator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97BBD9D91D0711C800A15849;
+			productRefGroup = 97BBD9E31D0711C800A15849 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97BBD9E11D0711C800A15849 /* StoreLocator */,
+				97BBD9F81D0711C800A15849 /* StoreLocatorTests */,
+				97BBDA031D0711C800A15849 /* StoreLocatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97BBD9E01D0711C800A15849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BBD9F31D0711C800A15849 /* LaunchScreen.storyboard in Resources */,
+				97A2B7A71D1761BF00705D4F /* Default.png in Resources */,
+				97DADA601D0E2B2900EE4409 /* store.png in Resources */,
+				97BBD9F01D0711C800A15849 /* Assets.xcassets in Resources */,
+				97A2B7A51D1649B200705D4F /* revealicon@2x.png in Resources */,
+				97CD47111D232C6400891D39 /* MapPointer@2x.png in Resources */,
+				97CD470F1D232B0E00891D39 /* Phone@2x.png in Resources */,
+				97BBD9EB1D0711C800A15849 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBD9F71D0711C800A15849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBDA021D0711C800A15849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E66BA8A9F065762ED8FCFBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA82F5159C81AB3E3454369 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoreLocator/Pods-StoreLocator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE77F0AEC8CA7777B12C3F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StoreLocator/Pods-StoreLocator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97BBD9DE1D0711C800A15849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BBD9E81D0711C800A15849 /* MapViewController.swift in Sources */,
+				97FD3B1A1D1B1498003749B0 /* StoreHoursCell.swift in Sources */,
+				97FF832E1D0B51D00059605A /* JSON.swift in Sources */,
+				97FD3B181D1AF68A003749B0 /* StoreContactCell.swift in Sources */,
+				97FF832D1D0B51D00059605A /* POST.swift in Sources */,
+				97DADA621D0E5EFB00EE4409 /* StoreDtlViewController.swift in Sources */,
+				976EE04A1D2177F700D6E016 /* PharmacyHours.swift in Sources */,
+				97DADA5D1D0E265C00EE4409 /* ViewController.swift in Sources */,
+				97FF83291D0B16230059605A /* MapTableViewCell.swift in Sources */,
+				976EE0481D2177E200D6E016 /* StoreHours.swift in Sources */,
+				97BBD9EE1D0711C800A15849 /* StoreLocator.xcdatamodeld in Sources */,
+				97BBD9E61D0711C800A15849 /* AppDelegate.swift in Sources */,
+				976EE0461D21778F00D6E016 /* StoreDtl.swift in Sources */,
+				976EE04E1D21BC9600D6E016 /* StoreContactDtl.swift in Sources */,
+				976EE04C1D21780A00D6E016 /* ClinicHours.swift in Sources */,
+				97FD3B161D1AF643003749B0 /* StoreDetailsCell.swift in Sources */,
+				97FF83271D0B0F350059605A /* Stores.swift in Sources */,
+				97FD3B1E1D1B14C9003749B0 /* ClinicHourCell.swift in Sources */,
+				97FD3B1C1D1B14BC003749B0 /* PharmacyHourCell.swift in Sources */,
+				97FF83301D0B52940059605A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBD9F51D0711C800A15849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BBD9FE1D0711C800A15849 /* StoreLocatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BBDA001D0711C800A15849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BBDA091D0711C800A15849 /* StoreLocatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97BBD9FB1D0711C800A15849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97BBD9E11D0711C800A15849 /* StoreLocator */;
+			targetProxy = 97BBD9FA1D0711C800A15849 /* PBXContainerItemProxy */;
+		};
+		97BBDA061D0711C800A15849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97BBD9E11D0711C800A15849 /* StoreLocator */;
+			targetProxy = 97BBDA051D0711C800A15849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97BBD9E91D0711C800A15849 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97BBD9EA1D0711C800A15849 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97BBD9F11D0711C800A15849 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97BBD9F21D0711C800A15849 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97BBDA0B1D0711C900A15849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97BBDA0C1D0711C900A15849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97BBDA0E1D0711C900A15849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A9851D007263122085D0D1 /* Pods-StoreLocator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cognizant Technology Solutions India Pvt Ltd";
+				INFOPLIST_FILE = StoreLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a5688cd-e4f2-40bf-8223-d344a812338e";
+				SWIFT_OBJC_BRIDGING_HEADER = "StoreLocator/StoreLocator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97BBDA0F1D0711C900A15849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10F00902C11EF9B28BDD65C /* Pods-StoreLocator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cognizant Technology Solutions India Pvt Ltd";
+				INFOPLIST_FILE = StoreLocator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5a5688cd-e4f2-40bf-8223-d344a812338e";
+				SWIFT_OBJC_BRIDGING_HEADER = "StoreLocator/StoreLocator-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		97BBDA111D0711C900A15849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoreLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreLocator.app/StoreLocator";
+			};
+			name = Debug;
+		};
+		97BBDA121D0711C900A15849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StoreLocatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreLocator.app/StoreLocator";
+			};
+			name = Release;
+		};
+		97BBDA141D0711C900A15849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StoreLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoreLocator;
+			};
+			name = Debug;
+		};
+		97BBDA151D0711C900A15849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StoreLocatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cognizantenterprisemobility.StoreLocatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StoreLocator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97BBD9DD1D0711C800A15849 /* Build configuration list for PBXProject "StoreLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BBDA0B1D0711C900A15849 /* Debug */,
+				97BBDA0C1D0711C900A15849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BBDA0D1D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BBDA0E1D0711C900A15849 /* Debug */,
+				97BBDA0F1D0711C900A15849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BBDA101D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BBDA111D0711C900A15849 /* Debug */,
+				97BBDA121D0711C900A15849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BBDA131D0711C900A15849 /* Build configuration list for PBXNativeTarget "StoreLocatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BBDA141D0711C900A15849 /* Debug */,
+				97BBDA151D0711C900A15849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		97BBD9EC1D0711C800A15849 /* StoreLocator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97BBD9ED1D0711C800A15849 /* StoreLocator.xcdatamodel */,
+			);
+			currentVersion = 97BBD9ED1D0711C800A15849 /* StoreLocator.xcdatamodel */;
+			path = StoreLocator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 97BBD9DA1D0711C800A15849 /* Project object */;
+}
